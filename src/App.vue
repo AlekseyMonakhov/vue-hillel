@@ -1,5 +1,7 @@
 <template>
-    <Card />
+    <Card title="title" />
+    <Card text="some text" />
+    <Card title="second title" text="second text" />
 </template>
 
 <script>
