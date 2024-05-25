@@ -1,16 +1,16 @@
 <template>
-    <Card title="title" />
-    <Card text="some text" />
-    <Card title="second title" text="second text" />
+    <BaseCard title="title" />
+    <BaseCard text="some text" />
+    <BaseCard title="second title" text="second text" />
 </template>
 
 <script>
-import Card from './components/Card.vue'
+import BaseCard from './components/BaseCard.vue'
 
 export default {
     name: 'App',
     components: {
-        Card
+        BaseCard
     }
 }
 </script>

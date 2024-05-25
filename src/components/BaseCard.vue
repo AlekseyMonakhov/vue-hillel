@@ -9,7 +9,7 @@
 
 <script>
 export default {
-    name: 'Card',
+    name: 'BaseCard',
     props: {
         title: String,
         text: String
