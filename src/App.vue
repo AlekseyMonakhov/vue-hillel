@@ -1,16 +1,14 @@
 <template>
-    <Card title="title" />
-    <Card text="some text" />
-    <Card title="second title" text="second text" />
+    <AlertComponent :type="'warning'" :text="'what is love?'" />
 </template>
 
 <script>
-import Card from './components/Card.vue'
+import AlertComponent from './components/AlertComponent.vue'
 
 export default {
     name: 'App',
     components: {
-        Card
+        AlertComponent
     }
 }
 </script>
