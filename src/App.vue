@@ -1,16 +1,22 @@
 <template>
-    <Card title="title" />
-    <Card text="some text" />
-    <Card title="second title" text="second text" />
+    <DefinitionsList :data="definitions" />
 </template>
 
 <script>
-import Card from './components/Card.vue'
+import DefinitionsList from './components/DefinitionsList.vue'
 
 export default {
     name: 'App',
     components: {
-        Card
+        DefinitionsList
+    },
+    data() {
+        return {
+            definitions: [
+                { dt: 'one', dd: 'two', id: 1 },
+                { dt: 'another term', dd: 'another description', id: 2 },
+            ]
+        }
     }
 }
 </script>
