@@ -1,16 +1,17 @@
 <template>
-    <Card title="title" />
-    <Card text="some text" />
-    <Card title="second title" text="second text" />
+    <ListGroup>
+        <p>one</p>
+        <p>two</p>
+    </ListGroup>
 </template>
 
 <script>
-import Card from './components/Card.vue'
+import ListGroup from './components/ListGroup.vue'
 
 export default {
     name: 'App',
     components: {
-        Card
+        ListGroup
     }
 }
 </script>
