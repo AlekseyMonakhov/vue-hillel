@@ -1,17 +1,14 @@
 <template>
-    <ListGroup>
-        <p>one</p>
-        <p>two</p>
-    </ListGroup>
+    <CarouselComponent />
 </template>
 
 <script>
-import ListGroup from './components/ListGroup.vue'
+import CarouselComponent from './components/CarouselComponent.vue'
 
 export default {
     name: 'App',
     components: {
-        ListGroup
+        CarouselComponent
     }
 }
 </script>
