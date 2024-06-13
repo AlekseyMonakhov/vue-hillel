@@ -37,12 +37,14 @@ export default {
     name: 'CarouselComponent',
     data() {
         return {
-            carouselImages: [
-                new URL('@/assets/first.webp', import.meta.url).href,
-                new URL('@/assets/second.webp', import.meta.url).href,
-                new URL('@/assets/third.webp', import.meta.url).href
-            ],
+            carouselImages: slideImages,
             currentSlide: 0
+        }
+    },
+
+    computed: {
+        slideImages() {
+            return getSlides()
         }
     },
 
@@ -53,6 +55,13 @@ export default {
         prevSlide() {
             this.currentSlide =
                 (this.currentSlide - 1 + this.carouselImages.length) % this.carouselImages.length
+        },
+        getSlides() {
+            return [
+                new URL('@/assets/first.webp', import.meta.url).href,
+                new URL('@/assets/second.webp', import.meta.url).href,
+                new URL('@/assets/third.webp', import.meta.url).href
+            ]
         }
     }
 }
