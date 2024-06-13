@@ -1,17 +1,17 @@
 <template>
-    <ListGroup>
-        <p>one</p>
-        <p>two</p>
-    </ListGroup>
+    <div>
+        <h1>Приклад компонента Collapse</h1>
+        <MyCollapse text="Це прихований текст" :opened="true" />
+    </div>
 </template>
 
 <script>
-import ListGroup from './components/ListGroup.vue'
+import MyCollapse from './components/MyCollapse.vue'
 
 export default {
     name: 'App',
     components: {
-        ListGroup
+        MyCollapse
     }
 }
 </script>
