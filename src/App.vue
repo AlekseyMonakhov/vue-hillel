@@ -1,17 +1,16 @@
 <template>
     <div>
-        <h1>Приклад компонента Collapse</h1>
-        <MyCollapse text="Це прихований текст" :opened="true" />
+        <TodoList />
     </div>
 </template>
 
 <script>
-import MyCollapse from './components/MyCollapse.vue'
+import TodoList from './components/TodoList.vue'
 
 export default {
     name: 'App',
     components: {
-        MyCollapse
+        TodoList
     }
 }
 </script>
